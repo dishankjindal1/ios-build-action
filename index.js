@@ -10,6 +10,7 @@ async function run() {
     ) {
       throw new Error("Browserstack username or access key missing.");
     }
+    process.env.INCREMENT_BUILD_NUMBER = core.getInput("ios-app-id");
     process.env.INCREMENT_BUILD_NUMBER = core.getInput("increment-build-number");
     process.env.TESTFLIGHT_UPLOAD = core.getInput("upload-to-testflight");
     process.env.PROJECT_PATH = core.getInput("project-path");
