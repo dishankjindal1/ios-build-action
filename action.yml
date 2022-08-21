@@ -16,6 +16,10 @@ inputs:
   project-path:
     description: "Project path"
     required: true
+  ios-app-id:
+     description: "iOS bundle id"
+     required: true
+     default: "XC"
   team-id:
     description: "Team id"
     required: true
